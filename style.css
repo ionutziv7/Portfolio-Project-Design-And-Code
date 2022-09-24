@@ -124,4 +124,18 @@ body {
   top: 70%;
   border-radius: 50%;
   transform: translateX(-50%);
+  animation: upDown 2s infinite;
+}
+
+/* dot animation */
+@keyframes upDown {
+  0% {
+    transform: translateY(0) translateX(-50%);
+  }
+  50% {
+    transform: translateY(-15px) translateX(-50%) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) translateX(-50%) scale(1);
+  }
 }
