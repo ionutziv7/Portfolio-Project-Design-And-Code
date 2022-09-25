@@ -19,7 +19,7 @@ body {
 }
 
 .main-content {
-  margin-left: 20rem;
+  margin-left: 23rem;
   min-height: 100vh;
 }
 
@@ -67,7 +67,12 @@ body {
 /* Hero Style */
 .hero-section {
   min-height: 100vh;
-  background-image: url(./img/bg.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.648)
+    ),
+    url(./img/bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,4 +143,49 @@ body {
   100% {
     transform: translateY(0) translateX(-50%) scale(1);
   }
+}
+
+/* About Section */
+span {
+  color: #2f08ed;
+}
+
+p {
+  color: #718096;
+}
+
+.about-section {
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 7rem 5rem;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.2rem 0;
+}
+
+.about-container img {
+  width: 45%;
+  padding-right: 4rem;
+}
+
+.main-title p {
+  color: #2f80ed;
+  font-size: 1.4rem;
+}
+
+.main-title h3 {
+  color: #2d3748;
+  font-size: 2.5rem;
+}
+
+.right-about-sect h5 {
+  color: black;
+  font-size: 2rem;
+}
+
+.right-about-sect {
+  padding: 1rem 0;
 }
