@@ -13,12 +13,17 @@
   --color-black: #000;
   --color-secondary: #2684ff;
   --color-paragraph: #718096;
-  --color-heading3: #2d3748;
+  --color-heading: #2d3748;
+  --color-lightGrey: #f9f9f9;
 }
 
 body {
   color: #fff;
   font-size: 1.2rem;
+}
+
+section {
+  padding: 7rem;
 }
 
 .header {
@@ -171,7 +176,6 @@ p {
 .about-section {
   min-height: 100vh;
   background-color: var(--color-white);
-  padding: 7rem 5rem;
 }
 
 .about-container {
@@ -192,7 +196,7 @@ p {
 }
 
 .main-title h3 {
-  color: var(--color-heading3);
+  color: var(--color-heading);
   font-size: 2.5rem;
 }
 
@@ -244,4 +248,43 @@ p {
 
 .button-container {
   margin-top: 3rem;
+}
+
+/* Services */
+.services {
+  background-color: var(--color-lightGrey);
+  min-height: 100vh;
+}
+
+.service-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  padding: 2.2rem 0;
+}
+
+.s-item {
+  min-height: 25vh;
+  background-color: var(--color-white);
+  padding: 2rem;
+}
+
+.s-item h6 {
+  color: var(--color-heading);
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+
+.s-item p:first-child {
+  color: var(--color-primary);
+}
+
+.s-item a {
+  color: var(--color-primary);
+  display: inline-block;
+  padding: 1rem 0;
+}
+
+.s-item p {
+  line-height: 1.9rem;
 }
