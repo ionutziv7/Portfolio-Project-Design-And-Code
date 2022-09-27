@@ -173,6 +173,11 @@ p {
   color: var(--color-paragraph);
 }
 
+h3 {
+  color: var(--color-heading);
+  font-size: 2rem;
+}
+
 .about-section {
   min-height: 100vh;
   background-color: var(--color-white);
@@ -251,10 +256,6 @@ p {
 }
 
 /*Services*/
-section {
-  padding: 7rem;
-}
-
 .services {
   background-color: #f9f9f9;
   min-height: 100vh;
@@ -493,4 +494,24 @@ section {
 
 .image-blog img:hover {
   filter: grayscale(0);
+}
+
+/* Contact */
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 2rem;
+  grid-gap: 2rem;
+}
+
+.contact-text {
+
+}
+
+.contact-details {
+
+}
+
+.contact-icons {
+  
 }
