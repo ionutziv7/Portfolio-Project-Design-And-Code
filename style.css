@@ -535,3 +535,33 @@ h3 {
   font-family: inherit;
   font-size: inherit;
 }
+
+/* Footer */
+.footer {
+  background-color: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.4s ease-in-out;
+}
+
+.scroller {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #718096;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+}
+
+.scroller::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #eee;
+  transform: translate(-50%, -50%);
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
