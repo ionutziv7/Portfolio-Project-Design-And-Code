@@ -504,14 +504,34 @@ h3 {
   grid-gap: 2rem;
 }
 
-.contact-text {
-
+.input-control {
+  padding: 0.4rem 0;
 }
 
-.contact-details {
-
+.input-control input {
+  width: 100%;
+  border-radius: 7px;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.7rem 0.4rem;
+  outline: none;
+  border: 1px solid #718096;
 }
 
-.contact-icons {
-  
+.input-control textarea {
+  width: 100%;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.7rem 0.4rem;
+  outline: none;
+  border: 1px solid #718096;
+  border-radius: 7px;
+}
+
+.submit-btn {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
 }
