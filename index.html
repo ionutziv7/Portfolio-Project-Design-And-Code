@@ -14,18 +14,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="sideMenu">
       <nav class="navigation">
         <div class="logo">
           <img src="img/Logo.svg" alt="" />
         </div>
         <ul class="nav-items">
           <li><a href="#" style="color: #2f80ed">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="nav-icons">
           <div class="icons">
@@ -52,7 +52,7 @@
         </div>
       </section>
 
-      <section class="about-section">
+      <section class="about-section" id="about">
         <div class="main-title">
           <p>ABOUT ME</p>
           <h3>ABOUT ME</h3>
@@ -137,7 +137,7 @@
         </div>
       </section>
 
-      <section class="services">
+      <section class="services" id="services">
         <div class="main-title">
           <p>Services</p>
           <h3>SERVICES</h3>
@@ -254,7 +254,7 @@
         </div>
       </section>
 
-      <section class="portfolio-section">
+      <section class="portfolio-section" id="portfolio">
         <div class="main-title">
           <p>Portfolio</p>
           <h3>PORTFOLIO</h3>
@@ -306,7 +306,7 @@
         </div>
       </section>
 
-      <section class="blogs-section">
+      <section class="blogs-section" id="blogs">
         <div class="main-title">
           <p>Blogs</p>
           <h3>BLOGS</h3>
@@ -376,7 +376,7 @@
         </div>
       </section>
 
-      <section class="contact-section">
+      <section class="contact-section" id="contact">
         <div class="main-title">
           <p>Contact</p>
           <h3>CONTACT</h3>
@@ -491,7 +491,7 @@
         </div>
       </section>
 
-      <section class="footer">
+      <section class="footer" id="footer">
         <div class="footer-text">
           <p>
             @2022, John Smith. All Rights Reserved. This website is designed by
@@ -503,16 +503,17 @@
 
       <nav class="top-nav">
         <div class="top-nav-content">
-          <div class="top-logo">
-            <img src="img/Logo.svg" alt="" />
-          </div>
-          <div class="burger-menu">
-            <div class="line-1"></div>
-            <div class="line-2"></div>
-            <div class="line-3"></div>
+          <div class="hamburger">
+            <div class="burger-menu">
+              <div class="line-1"></div>
+              <div class="line-2"></div>
+              <div class="line-3"></div>
+            </div>
           </div>
         </div>
       </nav>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
