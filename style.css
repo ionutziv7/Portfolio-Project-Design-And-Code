@@ -515,7 +515,7 @@ h3 {
   font-family: inherit;
   padding: 0.7rem 0.4rem;
   outline: none;
-  border: 1px solid #718096;
+  border: 1px solid #eee;
 }
 
 .input-control textarea {
@@ -524,7 +524,7 @@ h3 {
   font-family: inherit;
   padding: 0.7rem 0.4rem;
   outline: none;
-  border: 1px solid #718096;
+  border: 1px solid #eee;
   border-radius: 7px;
 }
 
@@ -564,4 +564,291 @@ h3 {
   background-color: #eee;
   transform: translate(-50%, -50%);
   clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+.top-nav {
+  width: 100%;
+  height: 8vh;
+  background-color: var(--color-black);
+  position: absolute;
+  top: 0;
+  display: none;
+  z-index: 5;
+}
+
+.burger-menu {
+  width: 2.5rem;
+  height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+  width: 100%;
+  height: 0.2rem;
+  background-color: var(--color-white);
+}
+
+.top-nav-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.top-logo img {
+  width: 100px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1483px) {
+  .btn {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1426px) {
+  .btn {
+    font-size: 1.1rem;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1309px) {
+  .header {
+    transform: translateX(-100%);
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .top-nav {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1138px) {
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .right-about-sect {
+    padding-left: 0;
+    padding-top: 4rem;
+  }
+
+  .about-container .abt-img {
+    width: 88%;
+  }
+}
+
+@media screen and (max-width: 1035px) {
+  .service-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1006px) {
+  .contact-info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .portfolio-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 781px) {
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 765px) {
+  section {
+    padding: 5rem 3rem;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .servive-skills {
+    flex-direction: column;
+  }
+
+  .progress-bars {
+    padding-left: 0;
+    padding-top: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .service-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .portfolio-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  body {
+    font-size: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+    padding: 1rem 0;
+  }
+
+  .main-title h3 {
+    font-size: 1.5rem;
+  }
+  .main-title p {
+    font-size: 1.1rem;
+  }
+
+  .right-about-sect h5 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem !important;
+  }
+
+  h5 {
+    font-size: 1.5rem !important;
+  }
+
+  .btn {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 502px) {
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .portfolio-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .icons-text p {
+    margin-left: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .input-control input {
+    width: 88%;
+  }
+
+  .input-control textarea {
+    width: 88%;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .btn {
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  section {
+    padding: 3rem 1.8rem;
+  }
+
+  .burger-menu {
+    width: 2rem;
+    height: 1rem;
+  }
+
+  .line-1,
+  .line-2,
+  .line-3 {
+    width: 100%;
+    height: 0.1rem;
+  }
+
+  .about-container .abt-img {
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+
+  .icons-text p {
+    padding: 0;
+    margin-left: 0.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem !important;
+  }
+
+  .scroller::after {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .btn {
+    font-size: 0.8rem;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 304px) {
+  .btn {
+    font-size: 0.8rem;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 282px) {
+  .btn {
+    font-size: 0.5rem;
+    margin-right: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 288px) {
+  .btn {
+    font-size: 0.4rem;
+    margin-right: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 265px) {
+  .btn {
+    font-size: 0.5rem;
+    margin-right: 0;
+  }
 }
